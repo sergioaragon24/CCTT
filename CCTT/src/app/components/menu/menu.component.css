@@ -1,0 +1,17 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+.mat-toolbar.mat-primary{
+    background: #173d68;
+}
+.sidenav-container {
+  height: 100%;
+}
+
+.img-fluid{
+  position: relative;
+}
+
+.sidenav-container {
+  height: 100%;
+}

@@ -1,0 +1,17 @@
+    table {
+    width: 80%;
+  }
+  
+  button {
+    margin: 16px 8px;
+  }
+
+  .tabla{
+    margin-left: 20%;
+}
+
+.mat-raised-button{
+    background: cadetblue;
+    color: aliceblue;
+    
+}

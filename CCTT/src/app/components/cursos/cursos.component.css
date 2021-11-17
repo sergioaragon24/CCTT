@@ -1,0 +1,22 @@
+.botonesclase{
+    margin-left: 32%;
+    
+    
+}
+
+.mat-raised-button{
+    background: cadetblue;
+    color: aliceblue;
+    
+}
+
+.example-button-home{
+    width: calc(50%-10px);
+    margin: 5px;
+    margin-left: 15%;
+}
+.tema{
+    margin-left: 15%;
+}
+
+

@@ -1,0 +1,69 @@
+<section class="tabla">
+    <H2>_______________________________________________________ Videollamada ______________________________________________________</H2>
+    <div class="botonhome">
+        <a mat-raised-button color="warn" class = "button-container" href= "https://meet.google.com/agh-gzdt-tgt"> Entrar</a>
+      </div> 
+      <H2>_______________________________________________________ Tutoria ______________________________________________________</H2>
+      <div class="botonhome">
+          <a mat-raised-button color="warn" class = "button-container" (click)= "totutorias()"> Entrar</a>
+        </div> 
+    <H2>_______________________________________________________ Entrega Tarea ______________________________________________________</H2>
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table">
+        <!-- Position Column -->
+        <ng-container matColumnDef="demo-position">
+          <th mat-header-cell *matHeaderCellDef> No. </th>
+          <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+        </ng-container>
+      
+        <!-- Name Column -->
+        <ng-container matColumnDef="demo-name">
+          <th mat-header-cell *matHeaderCellDef> Tareas </th>
+          <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+      
+        <!-- Weight Column -->
+        <ng-container matColumnDef="demo-weight">
+          <th mat-header-cell *matHeaderCellDef> puntos </th>
+          <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+        </ng-container>
+      
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="demo-symbol">
+          <th mat-header-cell *matHeaderCellDef> Entregar </th>
+          <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+        </ng-container>
+      
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+
+      <h2>_________________________________________________________ Examenes ________________________________________________________</h2>
+      <table mat-table [dataSource]="dataSource1" class="mat-elevation-z8 demo-table">
+        <!-- Position Column -->
+        <ng-container matColumnDef="demo-positionmate">
+          <th mat-header-cell *matHeaderCellDef> No. </th>
+          <td mat-cell *matCellDef="let element"> {{element.positionmate}} </td>
+        </ng-container>
+      
+        <!-- Name Column -->
+        <ng-container matColumnDef="demo-namemate">
+          <th mat-header-cell *matHeaderCellDef> Tareas </th>
+          <td mat-cell *matCellDef="let element"> {{element.namemate}} </td>
+        </ng-container>
+      
+        <!-- Weight Column -->
+        <ng-container matColumnDef="demo-weightmate">
+          <th mat-header-cell *matHeaderCellDef> puntos </th>
+          <td mat-cell *matCellDef="let element"> {{element.weightmate}} </td>
+        </ng-container>
+      
+        <tr mat-header-row *matHeaderRowDef="displayedColumns1"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns1;"></tr>
+      </table>
+
+
+      <div class="botonhome">
+        <button mat-raised-button color="warn" class = "button-container" (click)= "toCursos()">Regreso</button>
+      </div>   
+      
+</section>
